@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <header class="cabecalho">
+            <img src="./assets/logo.svg" alt="">
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img src="./assets/tablet.svg" alt="">
+                    <strong>Boards</strong>
+                </li>
+                <li>
+                    <img src="./assets/people.svg" alt="">
+                    <strong>Equipes</strong>
+                </li>
+                <li>
+                    <img src="./assets/document-text.svg" alt="">
+                    <strong>Relatorios</strong>
+                </li>
+                <li>
+                    <img src="./assets/cog.svg" alt="">
+                    <strong>Ajustes</strong>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="container_main">
+        <header>
+            <div class="title">
+                <input class="input_title" id="input_title" type="text" value="Meu kanban">
+                <label for="input_title"><img src="./assets/pen.svg" alt=""></label>
+            </div>
+            <img class="user_vector" src="./assets/profile-picture..jpeg" alt="">
+        </header>
+
+        <div class="input_container">
+            <div class="btn_content">
+                <button class="filter_btn"><img src="./assets/filter.svg" alt="filter">filtrar</button>
+                <button class="btn_opened">
+                    <label for="todo">
+                        <input class="checkbox" type="checkbox" name="" id="todo">
+                        <span class="check"></span>
+                        To do
+                    </label>
+                    <label for="inProgress">
+                        <input class="checkbox" type="checkbox" name="" id="inProgress">
+                        <span class="check"></span>
+                        In progress
+                    </label>
+                    <label for="done">
+                        <input class="checkbox" type="checkbox" name="" id="done">
+                        <span class="check"></span>
+                        Done
+                    </label>
+                    <label for="todos">
+                        <input class="checkbox" type="checkbox" name="" id="todos">
+                        <span class="check"></span>
+                        All
+                    </label>
+
+                </button>
+            </div>
+
+            <div class="search_input">
+                <label for="search"> <img src="./assets/lupa.svg" alt=""> </label>
+                <input onchange="{e => searchContent(e.target.value)}" type="text" id="search"
+                    placeholder="Busque por cards, assuntos ou responsáveis...">
+            </div>
+        </div>
+        <section class="dropzone_boards">
+            <div class="dropzone_container">
+                <div class="board" id="to_do_board">
+                    <div class="button_content">
+                        <h1>To do</h1>
+                        <button class="btn_add">+</button>
+                    </div>
+                    <div class="dropzone">
+                        <!--Card to do-->
+                        <div class="card" draggable="true">
+                            <div class="card_content">
+                                <h2>#boraCodar um Kanban 🧑‍💻</h2>
+                                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de
+                                    Kanban.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" draggable="true">
+                            <div class="card_content">
+                                <h2>#boraCodar um Kanban 🧑‍💻</h2>
+                                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de
+                                    Kanban.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card" draggable="true">
+                            <div class="card_content">
+                                <h2>#boraCodar um Kanban 🧑‍💻</h2>
+                                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de
+                                    Kanban.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="board" id="in_progress_board">
+                    <h1>In progress</h1>
+
+                    <div class="dropzone">
+                        <!-- card in progress-->
+                        <div class="card" draggable="true">
+                            <div class="card_content">
+                                <h2>Conferir o novo desafio 🚀 </h2>
+                                <p>Conferir o novo projeto do #boraCodar para fazê-lo da melhor maneira possível</p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card_content" draggable="true">
+                                <h2>Ser incrível 😎 </h2>
+                                <p>Sempre me lembrar de manter minha autenticidade e espalhar amor</p>
+                                <div class="tags">
+                                    <span>autocuidado</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="board" id="done_board">
+                    <h1>Done</h1>
+
+                    <div class="dropzone">
+                        <!--Card done-->
+                        <div class="card" draggable="true">
+                            <div class="card_content">
+                                <h2>#boraCodar uma página de login 🧑‍💻</h2>
+                                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>      
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <section class="new_card_container">
+        <div class="new_card">
+            <button class="btn_close_modal">X</button>
+            <h2>Create New Card</h2>
+            <div class="new_card_content">
+                <label for="title">Titulo
+                    <input type="text" id="title_new_card">
+                </label>
+                <label for="description">Descrição
+                    <textarea name="" id="description" cols="30" rows="5"></textarea>
+                </label>
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="rocketseat">rocketseat</option>
+                    <option value="autocuidado">autocuidado</option>
+                    <option value="desafio">desafio</option>
+                </select>
+                <button class="btn_add_card">Add New Card</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/cards.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/newcard.js"></script>
+</body>
+
+</html>
