@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
  - [Layout do figma](https://www.figma.com/file/2EYwRMabl2gU9sg8prSC6c/%23boracodar---Desafio-12-(Community)?node-id=11-31&t=Q3QcGJFstteoDy1T-0)
 
- - [Veja o site em funcionamento](https://kadrokanban.netlify.app)
+ - [Veja o site em funcionamento](https://kanbanquadro.netlify.app)
  
 <hr>
 Developer by Izaac xavier 💜
