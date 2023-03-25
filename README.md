@@ -20,13 +20,16 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 ## ✨ Features
 
  Algumas features que valem a pena destacar:
+ 
 
 - ✔ Pesquisa por cards ou assuntos;
 - ✔ Filtrar por boards;
 - ✔ Adicionar novo card;
+- ✔ Possibilidade de trocar nome do projeto;
 - ✔ Scroll horizontal;
 - ✔ Modal para criação de novo card;
 - ✔ Responsividade;
+
 
 <hr>
 
