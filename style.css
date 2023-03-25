@@ -122,16 +122,14 @@ body {
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 12px 32px;
-  margin-left: 30px;
+  padding: 10px 32px;
+  margin: 5px 0 0 30px;
   background-color: #7c3aed;
   box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.14);
   cursor: pointer;
-  transition: filter: 0.2;
+ 
 }
-.filter_btn:hover{
-  filter: brightness(0.9)
-}
+
 .btn_opened {
   position: relative;
   display: none;
@@ -356,6 +354,7 @@ textarea, select {
   .navbar ul {
     margin: 0px;
   }
+ 
   
 }
 
@@ -382,14 +381,19 @@ textarea, select {
     width: 200px;
     height: 100%;
   }
-  .filter_btn{
-    padding: 10px 15px;
-  }
+ 
   .btn_opened {
-    width: 90px;
+    width: 85px;
   }
   .container_main {
     margin-left: 10px;
+  }
+  .btn_opened label{
+    font-size: 12px;
+  }
+  .filter_btn{
+    padding: 10px 15px 10px;
+    font-size: 12px;
   }
 }
 
