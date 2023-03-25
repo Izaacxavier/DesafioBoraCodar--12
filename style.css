@@ -317,8 +317,20 @@ textarea, select {
   margin-top: 10px;
   cursor: pointer;
 }
+#to_do_board.invisible {
+  display: none;
+}
+#to_do_board.invisible {
+  display: none;
+}
+#in_progress_board.invisible {
+  display: none;
+}
+#done_board.invisible {
+  display: none;
+}
 
-@media (width < 931px) {
+@media (max-width: 931px) {
   .sidebar {
     width: 50px;
   }
@@ -347,7 +359,7 @@ textarea, select {
   
 }
 
-@media (width < 490px){
+@media (max-width: 490px){
   .card {
     max-width: 200px;
     min-width: 200px;
@@ -381,15 +393,4 @@ textarea, select {
   }
 }
 
-#to_do_board.invisible {
-  display: none;
-}
-#to_do_board.invisible {
-  display: none;
-}
-#in_progress_board.invisible {
-  display: none;
-}
-#done_board.invisible {
-  display: none;
-}
+
