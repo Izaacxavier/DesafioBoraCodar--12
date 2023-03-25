@@ -173,7 +173,7 @@ body {
 
 .dropzone_container {
   display: flex;
-  width: 50%;
+  margin-right: -40px;
   min-width: 100%;
   overflow-x: scroll; // add scroll no eixo x
 }
@@ -328,7 +328,7 @@ textarea, select {
   display: none;
 }
 
-@media (max-width: 931px) {
+@media (max-width: 1174px) {
   .sidebar {
     width: 50px;
   }
@@ -394,6 +394,16 @@ textarea, select {
   .filter_btn{
     padding: 10px 15px 10px;
     font-size: 12px;
+  }
+  .user_vector {
+    width: 40px;
+    height: 40px;
+  }
+  .container_main header {
+    padding: 60px 0px 0 25px;
+  }
+  .input_container{
+    padding: 0 0 0 15px;
   }
 }
 
