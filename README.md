@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 - ✔ Possibilidade de trocar nome do projeto;
 - ✔ Scroll horizontal;
 - ✔ Modal para criação de novo card;
-- ✔ Responsividade;
+- ✔ Menu responsividade;
 
 
 <hr>
